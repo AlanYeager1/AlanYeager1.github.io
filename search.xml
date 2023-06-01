@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search> 
+  
+  
+    
+    <entry>
+      <title>制作自己的OS</title>
+      <link href="/2023/09/05/OS/MakeSelfOS/"/>
+      <url>/2023/09/05/OS/MakeSelfOS/</url>
+      
+        <content type="html"><![CDATA[<h1 id="此坑待填"><a href="#此坑待填" class="headerlink" title="此坑待填"></a>此坑待填</h1>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> 操作系统 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>现代操作系统MacOS内核解读</title>
+      <link href="/2023/08/05/OS/MacOS/"/>
+      <url>/2023/08/05/OS/MacOS/</url>
+      
+        <content type="html"><![CDATA[<h1 id="此坑待填"><a href="#此坑待填" class="headerlink" title="此坑待填"></a>此坑待填</h1>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> 操作系统 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>操作系统基础</title>
+      <link href="/2023/07/15/OS/OS/"/>
+      <url>/2023/07/15/OS/OS/</url>
+      
+        <content type="html"><![CDATA[<h1 id="此坑待填"><a href="#此坑待填" class="headerlink" title="此坑待填"></a>此坑待填</h1>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> 操作系统 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Intel汇编</title>
+      <link href="/2023/07/01/Assembly/Intel/"/>
+      <url>/2023/07/01/Assembly/Intel/</url>
+      
+        <content type="html"><![CDATA[<h1 id="此坑待填"><a href="#此坑待填" class="headerlink" title="此坑待填"></a>此坑待填</h1>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> 汇编语言 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>arm64汇编</title>
+      <link href="/2023/06/15/Assembly/arm64/"/>
+      <url>/2023/06/15/Assembly/arm64/</url>
+      
+        <content type="html"><![CDATA[<h1 id="此坑待填"><a href="#此坑待填" class="headerlink" title="此坑待填"></a>此坑待填</h1>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> 汇编语言 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>8086汇编</title>
+      <link href="/2023/05/30/Assembly/8086/"/>
+      <url>/2023/05/30/Assembly/8086/</url>
+      
+        <content type="html"><![CDATA[<h1 id="1-开始"><a href="#1-开始" class="headerlink" title="1 开始"></a>1 开始</h1><h2 id="1-1-前言"><a href="#1-1-前言" class="headerlink" title="1.1 前言"></a>1.1 前言</h2><p>我们为什么要学习一个早已过时，可以说现在基本没什么用的8086汇编语言呢？在我看来，如果要入门现代汇编语言，无论是arm64架构的汇编还是Intel汇编，8086是入门的最好选择，如果从来没有接触过汇编语言直接学习现代芯片的汇编在我看来是有一定的难度的，我们学习8086不仅仅学习汇编这个语法，也是探索计算机底层工作原理的一种方式，因为除了二进制，最接近底层的编程语言就是汇编语言了，你会发现汇编语言和高级语言非常不同，汇编语言基本都是通过操纵各种硬件来实现各种功能的，比如向寄存器中存入一个数值，或者向内存中加载一个数值等等，都是和硬件在打交道，所以学习汇编可以使你对计算机底层的工作原理更加清晰，提高你的深度。</p><p><strong>汇编语言</strong>是除了二进制语言你能操纵的最底层的语言，所以说效率也是非常高的的，是任何高级语言都不能相比的，因为越接近底层的语言，越是接近二进制语言，电脑cpu处理起来越是容易，因为对于电脑来说，二进制就是它能直接识别的语言，所以如果你厉害的话，可以直接用01编写代码，这种代码效率是最高的，可以直接给cpu去运行，不用再经过编译这一环节，所以说越接近底层的语言效率越高。</p><p>通过学习汇编语言，你会对底层有一个大概的了解，知道cpu和内存以及各种各样的硬件之间是如何进行交互配合，如何进行信息交互从而完成各种复杂的任务，并实现我们所看到的各种效果（如果你学习了汇编，你会知道怎么直接操纵显存，向显存中读取数据活着写入数据让显示器显示你所想要显示的任何东西，够底层吧！）。</p><p>这就是我们为什么要学习汇编，以及为什么要从8086汇编开始的原因。__再说点实际的，如果你想破解软件，做一名牛逼点的二进制黑客，从零开始制作操作系统等等，在我看来，学习汇编是必不可少的__。</p><h2 id="1-2-前置知识"><a href="#1-2-前置知识" class="headerlink" title="1.2 前置知识"></a>1.2 前置知识</h2><p>基本不需要太多的前置知识，但是也不是说80多岁的活着一二年级的小学生都能看懂，最好是能懂一门编程语言，了解过计算机组成原理即可。（不过就算你没学过计算机组成原理也没问题，我会非常详细的讲解每一点可能会让读者有疑问的地方，当然也可以加我qq，我会回答你的疑问的。）</p><h1 id="2-汇编语言基础1"><a href="#2-汇编语言基础1" class="headerlink" title="2 汇编语言基础1"></a>2 汇编语言基础1</h1><p>废话少说，咱们正式进入主题，首先我们从基础部分讲解，这部分内容包括</p><ul><li>计算机的硬件结构（了解）</li><li>sdf1</li></ul><h2 id="2-1-从机器语言到汇编语言"><a href="#2-1-从机器语言到汇编语言" class="headerlink" title="2.1 从机器语言到汇编语言"></a>2.1 从机器语言到汇编语言</h2><figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span><span class="string">&lt;stdio.h&gt;</span></span></span><br><span class="line"><span class="type">int</span> <span class="title function_">main</span><span class="params">()</span>&#123;</span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">&quot;Hello world!&quot;</span>);</span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">&quot;Hello world!&quot;</span>);</span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">&quot;Hello world!&quot;</span>);</span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">&quot;Hello world!&quot;</span>);</span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">&quot;Hello world!&quot;</span>);</span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">&quot;Hello world!&quot;</span>);</span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">&quot;Hello world!&quot;</span>);</span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">&quot;Hello world!&quot;</span>);</span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">&quot;Hello world!&quot;</span>);</span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">&quot;Hello world!&quot;</span>);</span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">&quot;Hello world!&quot;</span>);</span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">&quot;Hello world!&quot;</span>);</span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">&quot;Hello world!&quot;</span>);</span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">&quot;Hello world!&quot;</span>);</span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">&quot;Hello world!&quot;</span>);</span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">&quot;Hello world!&quot;</span>);</span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">&quot;Hello world!&quot;</span>);</span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">&quot;Hello world!&quot;</span>);</span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">&quot;Hello world!&quot;</span>);</span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">&quot;Hello world!&quot;</span>);</span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">&quot;Hello world!&quot;</span>);</span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">&quot;Hello world!&quot;</span>);</span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">&quot;Hello world!&quot;</span>);</span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">&quot;Hello world!&quot;</span>);</span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">&quot;Hello world!&quot;</span>);</span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">&quot;Hello world!&quot;</span>);</span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">&quot;Hello world!&quot;</span>);</span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">&quot;Hello world!&quot;</span>);</span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">&quot;Hello world!&quot;</span>);</span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">&quot;Hello world!&quot;</span>);</span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">&quot;Hello world!&quot;</span>);</span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">&quot;Hello world!&quot;</span>);</span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">&quot;Hello world!&quot;</span>);</span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">&quot;Hello world!&quot;</span>);</span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">&quot;Hello world!&quot;</span>);</span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">&quot;Hello world!&quot;</span>);</span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">&quot;Hello world!&quot;</span>);</span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">&quot;Hello world!&quot;</span>);</span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">&quot;Hello world!&quot;</span>);</span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">&quot;Hello world!&quot;</span>);</span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">&quot;Hello world!&quot;</span>);</span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">&quot;Hello world!&quot;</span>);</span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">&quot;Hello world!&quot;</span>);</span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">&quot;Hello world!&quot;</span>);</span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">&quot;Hello world!&quot;</span>);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> 汇编语言 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+  
+  
+</search>
